@@ -4,6 +4,9 @@ import urllib.request
 import json
 
 # Create your views here.
+def index(request):
+    return render(request, 'main/index.html')
+
 def home(request):
     if request.method == 'POST':
         city = request.POST['city']
